@@ -1,8 +1,25 @@
 {
   "name": "nyxbi",
   "version": "0.0.9",
-  "description": "",
-  "main": "index.js",
+  "description": "⚡️ Nyxb Generation CLI Experience",
+  "repository": "nyxbi/cli",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./cli": "./bin/nyxbi.mjs"
+  },
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "nyxbi": "./bin/nyxbi.mjs",
+    "nyxbi-ng": "./bin/nyxbi.mjs",
+    "nyxb": "./bin/nyxbi.mjs",
+    "nyxb-cli": "./bin/nyxbi.mjs"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
   "scripts": {
    "build": "unbuild",
    "build:stub": "unbuild --stub",
@@ -18,9 +35,6 @@
    "test:dist": "node ./bin/nyxb.mjs info ./playground",
    "test:types": "tsc --noEmit"
  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@nyxb/eslint-config": "1.0.0-beta.11",
     "@types/node": "^20.8.8",

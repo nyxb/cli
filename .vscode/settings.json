@@ -1,10 +1,12 @@
 {
   // Enable the flat config support
-//   "eslint.experimental.useFlatConfig": true,
+  "eslint.experimental.useFlatConfig": true,
 
   // Disable the default formatter
   "prettier.enable": false,
   "editor.formatOnSave": false,
+
+  "editor.defaultFormatter": null,
 
   // Auto fix
   "editor.codeActionsOnSave": {
@@ -14,15 +16,15 @@
 
   // Silent the stylistic rules in you IDE, but still auto fix them
   "eslint.rules.customizations": [
-    { "rule": "@stylistic/*", "severity": "off" },
-    { "rule": "*-indent", "severity": "off" },
-    { "rule": "*-spacing", "severity": "off" },
-    { "rule": "*-spaces", "severity": "off" },
-    { "rule": "*-order", "severity": "off" },
-    { "rule": "*-dangle", "severity": "off" },
-    { "rule": "*-newline", "severity": "off" },
-    { "rule": "*quotes", "severity": "off" },
-    { "rule": "*semi", "severity": "off" }
+    { "rule": "@stylistic/*", "severity": "error" },
+    { "rule": "*-indent", "severity": "error" },
+    { "rule": "*-spacing", "severity": "error" },
+    { "rule": "*-spaces", "severity": "error" },
+    { "rule": "*-order", "severity": "error" },
+    { "rule": "*-dangle", "severity": "error" },
+    { "rule": "*-newline", "severity": "error" },
+    { "rule": "*quotes", "severity": "error" },
+    { "rule": "*semi", "severity": "error" }
   ],
 
   "eslint.validate": [

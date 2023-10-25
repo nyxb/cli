@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.13
+
+[compare changes](https://github.com/nyxb/cli/compare/v0.0.12...v0.0.13)
+
+### 🚀 Enhancements
+
+- **init.ts): add automatic initial commit after project initialization to provide a starting point for version control 🐛 fix(init.ts:** Change directory back to original after commit to ensure correct working directory ([c16d966](https://github.com/nyxb/cli/commit/c16d966))
+
+### ❤️ Contributors
+
+- Nyxb <contact@nyxb.email>
+
 ## v0.0.12
 
 [compare changes](https://github.com/nyxb/cli/compare/v0.0.11...v0.0.12)

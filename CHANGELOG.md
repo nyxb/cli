@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.12
+
+[compare changes](https://github.com/nyxb/cli/compare/v0.0.11...v0.0.12)
+
+### 🩹 Fixes
+
+- **init.ts:** Correct typo in project name from 'Nuxt' to 'Nyxb' in console log message ([61c8715](https://github.com/nyxb/cli/commit/61c8715))
+
+### ❤️ Contributors
+
+- Nyxb <contact@nyxb.email>
+
 ## v0.0.11
 
 [compare changes](https://github.com/nyxb/cli/compare/v0.0.10...v0.0.11)

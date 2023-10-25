@@ -1,10 +1,10 @@
 {
   "name": "nyxbi",
+  "type": "module",
   "version": "0.0.9",
   "description": "⚡️ Nyxb Generation CLI Experience",
-  "repository": "nyxbi/cli",
   "license": "MIT",
-  "type": "module",
+  "repository": "nyxbi/cli",
   "exports": {
     ".": "./dist/index.mjs",
     "./cli": "./bin/nyxbi.mjs"
@@ -21,22 +21,22 @@
     "dist"
   ],
   "scripts": {
-   "build": "unbuild",
-   "build:stub": "unbuild --stub",
-   "dev": "node ./bin/nyxbi.mjs dev ./playground",
-   "dev:bun": "bun --bun ./bin/nyxbi.mjs dev ./playground",
-   "lint": "eslint .",
-   "lint:fix": "eslint --fix .",
-   "nyxbi": "node ./bin/nyxbi.mjs",
-   "nyxbi-bun": "bun --bun ./bin/nyxb.mjs",
-   "prepack": "unbuild",
-   "release": "pnpm test && changelogen --release && npm publish && git push --follow-tags",
-   "test": "pnpm lint && pnpm test:types && pnpm build",
-   "test:dist": "node ./bin/nyxb.mjs info ./playground",
-   "test:types": "tsc --noEmit"
- },
+    "build": "unbuild",
+    "build:stub": "unbuild --stub",
+    "dev": "node ./bin/nyxbi.mjs dev ./playground",
+    "dev:bun": "bun --bun ./bin/nyxbi.mjs dev ./playground",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "nyxbi": "node ./bin/nyxbi.mjs",
+    "nyxbi-bun": "bun --bun ./bin/nyxb.mjs",
+    "prepack": "unbuild",
+    "release": "pnpm test && changelogen --release && npm publish && git push --follow-tags",
+    "test": "pnpm lint && pnpm test:types && pnpm build",
+    "test:types": "tsc --noEmit"
+  },
   "devDependencies": {
-    "@nyxb/eslint-config": "1.0.0-beta.11",
+    "@nuxt/kit": "^3.8.0",
+    "@nyxb/eslint-config": "1.0.0-beta.12",
     "@types/node": "^20.8.8",
     "@types/semver": "^7.5.4",
     "citty": "^0.1.4",
@@ -48,6 +48,7 @@
     "pathe": "^1.1.1",
     "semver": "^7.5.4",
     "std-env": "^3.4.3",
-    "unbuild": "^2.0.0"
+    "unbuild": "^2.0.0",
+    "ws": "^8.14.2"
   }
 }

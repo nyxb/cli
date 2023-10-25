@@ -153,23 +153,15 @@ export default defineCommand({
       if (ctx.args.gitInit) {
          consola.info('Initializing git repository...\n')
          const { execaCommand } = await import('execa')
-         await execaCommand(`git init ${template.dir}`, {
+         await execaCommand(`
+    git init ${template.dir} &&
+    git --git-dir=${template.dir}/.git --work-tree=${template.dir} add . &&
+    git --git-dir=${template.dir}/.git --work-tree=${template.dir} commit -m "🔰 This is where it all begins..."
+`, {
             stdio: 'inherit',
+            shell: true,
          }).catch((err) => {
             consola.warn(`Failed to initialize git repository: ${err}`)
-         })
-         // Erstellen und Commit eines ersten Commit
-         await execaCommand(`git --git-dir=${template.dir}/.git --work-tree=${template.dir} add .`, {
-            stdio: 'inherit',
-         }).catch((err) => {
-            consola.warn(`Failed to add files to git: ${err}`)
-            consola.warn(err.stdout)
-            consola.warn(err.stderr)
-         })
-         await execaCommand(`git --git-dir=${template.dir}/.git --work-tree=${template.dir} commit -m "🔰 This is where it all begins..."`, {
-            stdio: 'inherit',
-         }).catch((err) => {
-            consola.warn(`Failed to commit files to git: ${err}`)
             consola.warn(err.stdout)
             consola.warn(err.stderr)
          })

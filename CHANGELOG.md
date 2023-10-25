@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.15
+
+[compare changes](https://github.com/nyxb/cli/compare/v0.0.14...v0.0.15)
+
+### 🚀 Enhancements
+
+- **init.ts:** Enhance error logging by adding stdout and stderr to catch blocks for better debugging ([76d11e4](https://github.com/nyxb/cli/commit/76d11e4))
+
+### ❤️ Contributors
+
+- Nyxb <contact@nyxb.email>
+
 ## v0.0.14
 
 [compare changes](https://github.com/nyxb/cli/compare/v0.0.13...v0.0.14)

@@ -5,35 +5,34 @@ import { commands } from './commands'
 import { main } from './main'
 
 globalThis.__nyxb_cli__ = globalThis.__nyxb_cli__ || {
-  // Programmatic usage fallback
-  startTime: Date.now(),
-  entry: fileURLToPath(
-    new URL(
-      import.meta.url.endsWith('.ts')
-        ? '../bin/nyxbi.mjs'
-        : '../../bin/nyxbi.mjs',
-      import.meta.url,
-    ),
-  ),
+   // Programmatic usage fallback
+   startTime: Date.now(),
+   entry: fileURLToPath(
+      new URL(
+         import.meta.url.endsWith('.ts')
+            ? '../bin/nyxbi.mjs'
+            : '../../bin/nyxbi.mjs',
+         import.meta.url,
+      ),
+   ),
 }
 
 export const runMain = () => _runMain(main)
 
 export async function runCommand(
-  name: string,
-  argv: string[] = process.argv.slice(2),
-  data: { overrides?: Record<string, any> } = {},
+   name: string,
+   argv: string[] = process.argv.slice(2),
+   data: { overrides?: Record<string, any> } = {},
 ) {
-  argv.push('--no-clear') // Dev
+   argv.push('--no-clear') // Dev
 
-  if (!(name in commands)) {
-    throw new Error(`Invalid command ${name}`)
-  }
+   if (!(name in commands))
+      throw new Error(`Invalid command ${name}`)
 
-  return await _runCommand(await commands[name as keyof typeof commands](), {
-    rawArgs: argv,
-    data: {
-      overrides: data.overrides || {},
-    },
-  })
+   return await _runCommand(await commands[name as keyof typeof commands](), {
+      rawArgs: argv,
+      data: {
+         overrides: data.overrides || {},
+      },
+   })
 }

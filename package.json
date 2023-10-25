@@ -30,7 +30,7 @@
     "nyxbi": "node ./bin/nyxbi.mjs",
     "nyxbi-bun": "bun --bun ./bin/nyxb.mjs",
     "prepack": "unbuild",
-    "release": "pnpm test && changelogen --release && npm publish && git push --follow-tags",
+    "release": "pnpm test && npx changelogen --release && npm publish && git push --follow-tags",
     "test": "pnpm lint && pnpm test:types && pnpm build",
     "test:types": "tsc --noEmit"
   },

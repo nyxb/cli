@@ -7,5 +7,6 @@ export default nyxb({
    rules: {
       'node/prefer-global/process': 0,
       'no-restricted-globals': 0,
+      'vars-on-top': 0,
    },
 })

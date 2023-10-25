@@ -162,7 +162,7 @@ export default defineCommand({
 
       // Display next steps
       consola.log(
-      `\n✨ Nuxt project has been created with the \`${template.name}\` template. Next steps:`,
+      `\n✨ Nyxb project has been created with the \`${template.name}\` template. Next steps:`,
       )
 
       const nextSteps = [

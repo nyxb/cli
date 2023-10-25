@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.11
+
+[compare changes](https://github.com/nyxb/cli/compare/v0.0.10...v0.0.11)
+
+### 🩹 Fixes
+
+- **package.json, init.ts): correct repository and default registry URLs from 'nyxbi' to 'nyxb' to reflect the updated organization name 🔧 fix(package.json:** Add newline at end of file to adhere to POSIX standards ([95332e7](https://github.com/nyxb/cli/commit/95332e7))
+
+### ❤️ Contributors
+
+- Nyxb <contact@nyxb.email>
+
 ## v0.0.10
 
 

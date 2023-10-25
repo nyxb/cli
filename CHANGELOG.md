@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.17
+
+[compare changes](https://github.com/nyxb/cli/compare/v0.0.16...v0.0.17)
+
+### 🏡 Chore
+
+- **init.ts:** Add --quiet flag to git commit command to suppress output and make logs cleaner ([c240a6c](https://github.com/nyxb/cli/commit/c240a6c))
+
+### ❤️ Contributors
+
+- Nyxb <contact@nyxb.email>
+
 ## v0.0.16
 
 [compare changes](https://github.com/nyxb/cli/compare/v0.0.15...v0.0.16)

@@ -4,7 +4,7 @@
   "version": "0.0.10",
   "description": "⚡️ Nyxb Generation CLI Experience",
   "license": "MIT",
-  "repository": "nyxbi/cli",
+  "repository": "nyxb/cli",
   "exports": {
     ".": "./dist/index.mjs",
     "./cli": "./bin/nyxbi.mjs"

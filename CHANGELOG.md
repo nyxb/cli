@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.14
+
+[compare changes](https://github.com/nyxb/cli/compare/v0.0.13...v0.0.14)
+
+### 💅 Refactors
+
+- **init.ts): replace process.chdir with git --git-dir and --work-tree options to avoid changing the current working directory 🐛 fix(init.ts:** Prevent potential issues with other operations that depend on the current working directory ([f54a478](https://github.com/nyxb/cli/commit/f54a478))
+
+### ❤️ Contributors
+
+- Nyxb <contact@nyxb.email>
+
 ## v0.0.13
 
 [compare changes](https://github.com/nyxb/cli/compare/v0.0.12...v0.0.13)

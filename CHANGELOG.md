@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.16
+
+[compare changes](https://github.com/nyxb/cli/compare/v0.0.15...v0.0.16)
+
+### 💅 Refactors
+
+- **init.ts:** Simplify git initialization and first commit process by combining commands into a single execaCommand call to improve code readability and maintainability ([a3402c2](https://github.com/nyxb/cli/commit/a3402c2))
+
+### ❤️ Contributors
+
+- Nyxb <contact@nyxb.email>
+
 ## v0.0.15
 
 [compare changes](https://github.com/nyxb/cli/compare/v0.0.14...v0.0.15)

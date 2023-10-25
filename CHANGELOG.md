@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.18
+
+[compare changes](https://github.com/nyxb/cli/compare/v0.0.17...v0.0.18)
+
+### 💅 Refactors
+
+- **init.ts:** Use --quiet flag with git init command to suppress output and make logs cleaner ([f74fe70](https://github.com/nyxb/cli/commit/f74fe70))
+
+### ❤️ Contributors
+
+- Nyxb <contact@nyxb.email>
+
 ## v0.0.17
 
 [compare changes](https://github.com/nyxb/cli/compare/v0.0.16...v0.0.17)

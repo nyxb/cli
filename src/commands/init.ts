@@ -154,7 +154,7 @@ export default defineCommand({
          consola.info('Initializing git repository...\n')
          const { execaCommand } = await import('execa')
          await execaCommand(`
-    git init ${template.dir} &&
+    git init --quiet ${template.dir} &&
     git --git-dir=${template.dir}/.git --work-tree=${template.dir} add . &&
     git --git-dir=${template.dir}/.git --work-tree=${template.dir} commit --quiet -m "🔰 This is where it all begins..."
 `, {

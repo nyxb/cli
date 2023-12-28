@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🙌 Contribution Guide
+    url: https://nyxb.nexus/contribute
+    about: Please read through before making contributions.
+  - name: 📜 Code of Conduct
+    url: https://nyxb.nexus/code-of-conduct
+    about: Please read through before making contributions.
+  - name: 💬 Nyxb's Discord Server
+    url: https://nyxb.chat/
+    about: Want to discuss / chat with the community? Here you go!
+  - name: ⁉️ Why and How to make a reproduction?
+    url: https://nyxb.nexus/posts/why-reproductions-are-required
+    about: Reproduction is very important for maintainer to help on your issues!
+  - name: ❓ Questions & 💬 Discussions
+    url: https://github.com/elk-zone/elk/discussions
+    about: Use GitHub discussions for message-board style questions and discussions.

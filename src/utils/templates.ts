@@ -6,7 +6,7 @@ interface TemplateOptions {
 }
 
 interface Template {
-   (options: TemplateOptions): { path: string, contents: string }
+   (options: TemplateOptions): { path: string; contents: string }
 }
 
 const httpMethods = [
@@ -24,7 +24,7 @@ const api: Template = ({ name, args }) => ({
    path: `server/api/${name}${applySuffix(args, httpMethods, 'method')}.ts`,
    contents: `
 export default defineEventHandler((event) => {
-  return 'Hello ${name}'
+   return 'Hello ${name}'
 })
 `,
 })
@@ -33,7 +33,7 @@ const plugin: Template = ({ name, args }) => ({
    path: `plugins/${name}${applySuffix(args, ['client', 'server'], 'mode')}.ts`,
    contents: `
 export default defineNuxtPlugin((nuxtApp) => {})
-  `,
+   `,
 })
 
 const component: Template = ({ name, args }) => ({
@@ -46,11 +46,11 @@ const component: Template = ({ name, args }) => ({
 <script lang="ts" setup></script>
 
 <template>
-  <div>
-    Component: ${name}
-  </div>
+   <div>
+      Component: TheHeader
+   </div>
 </template>
-
+   
 <style scoped></style>
 `,
 })
@@ -82,12 +82,12 @@ const layout: Template = ({ name }) => ({
 <script lang="ts" setup></script>
 
 <template>
-  <div>
-    Layout: ${name}
-    <slot />
-  </div>
+   <div>
+      Layout: ${name}
+      <slot />
+   </div>
 </template>
-
+   
 <style scoped></style>
 `,
 })
@@ -98,9 +98,9 @@ const page: Template = ({ name }) => ({
 <script lang="ts" setup></script>
 
 <template>
-  <div>
-    Page: foo
-  </div>
+   <div>
+      Page: foo
+   </div>
 </template>
 
 <style scoped></style>

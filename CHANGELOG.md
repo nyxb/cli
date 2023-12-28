@@ -1,6 +1,32 @@
 # Changelog
 
 
+## v0.0.19
+
+[compare changes](https://github.com/nyxb/cli/compare/v0.0.18...v0.0.19)
+
+### 🚀 Enhancements
+
+- **commands/index.ts:** Add dynamic import for 'add' command ([cac39f4](https://github.com/nyxb/cli/commit/cac39f4))
+- **commands/add.ts:** Add new command to create template files ([8e3db39](https://github.com/nyxb/cli/commit/8e3db39))
+- **utils/esm.ts:** Add ESM utility functions for module resolution ([f94dd02](https://github.com/nyxb/cli/commit/f94dd02))
+- **utils/kit.ts:** Add utility to load @nuxt/kit with polyfill support ([e4e8fc8](https://github.com/nyxb/cli/commit/e4e8fc8))
+- **utils/templates.ts:** Add template utility functions for scaffolding ([bc0e700](https://github.com/nyxb/cli/commit/bc0e700))
+
+### 🏡 Chore
+
+- **release:** V0.0.18 ([ea6cb44](https://github.com/nyxb/cli/commit/ea6cb44))
+- **.gitignore:** Add .env to .gitignore to prevent committing sensitive environment variables ([a75113a](https://github.com/nyxb/cli/commit/a75113a))
+
+### 🎨 Styles
+
+- **.vscode/settings.json:** Update auto fix settings to explicit values ([f4b3b33](https://github.com/nyxb/cli/commit/f4b3b33))
+- Reformat code for consistency in various files ([37a8a77](https://github.com/nyxb/cli/commit/37a8a77))
+
+### ❤️ Contributors
+
+- Nyxb <contact@nyxb.email>
+
 ## v0.0.18
 
 [compare changes](https://github.com/nyxb/cli/compare/v0.0.17...v0.0.18)

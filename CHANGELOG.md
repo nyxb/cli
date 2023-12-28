@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.0.20
+
+[compare changes](https://github.com/nyxb/cli/compare/v0.0.19...v0.0.20)
+
+### 💅 Refactors
+
+- **src/utils/templates.ts:** Standardize object property separator from semicolon to comma for consistency ([4c55e26](https://github.com/nyxb/cli/commit/4c55e26))
+
+### 🎨 Styles
+
+- **package.json:** Add newline at end of file for POSIX compliance ([18f0141](https://github.com/nyxb/cli/commit/18f0141))
+
+### ❤️ Contributors
+
+- Nyxb <contact@nyxb.email>
+
 ## v0.0.19
 
 [compare changes](https://github.com/nyxb/cli/compare/v0.0.18...v0.0.19)

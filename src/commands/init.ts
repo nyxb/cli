@@ -174,8 +174,8 @@ export default defineCommand({
 
       const nextSteps = [
          !ctx.args.shell
-        && relativeProjectPath.length > 1
-        && `\`cd ${relativeProjectPath}\``,
+         && relativeProjectPath.length > 1
+         && `\`cd ${relativeProjectPath}\``,
       `Start development server with \`${selectedPackageManager} run dev\``,
       ].filter(Boolean)
 
